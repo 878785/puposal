@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Love Proposal + Quiz + Compliment</title>
+  <link rel="stylesheet" href="styless.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💖 Impress Your Crush 💖</h1>
+
+    <!-- Love Proposal Section -->
+    <section id="proposalSection" class="section">
+      <h2>Personalized Love Proposal</h2>
+      <input type="text" id="crushName" placeholder="Enter your crush's name" />
+      <button id="startProposalBtn">Start Proposal</button>
+      <div id="proposalMessage" class="hidden"></div>
+      <div id="proposalButtons" class="hidden">
+        <button id="yesBtn">💘 Yes</button>
+        <button id="noBtn">😂 No</button>
+      </div>
+      <div id="proposalResponse" class="hidden"></div>
+    </section>
+
+    <!-- Fun Quiz Section -->
+    <section id="quizSection" class="section hidden">
+      <h2>💌 Fun Love Quiz</h2>
+      <div id="quizContainer"></div>
+      <button id="showResultBtn" class="hidden">Show Result</button>
+      <div id="quizResult" class="hidden"></div>
+    </section>
+
+    <!-- Compliment Generator Section -->
+    <section id="complimentSection" class="section hidden">
+      <h2>AI-Powered Compliment Generator</h2>
+      <input type="text" id="complimentName" placeholder="Enter your crush's name" />
+      <select id="complimentType">
+        <option value="cute">Cute</option>
+        <option value="funny">Funny</option>
+        <option value="poetic">Poetic</option>
+      </select>
+      <button id="generateComplimentBtn">Generate Compliment</button>
+      <div id="complimentOutput" class="compliment-output"></div>
+    </section>
+
+    <!-- Navigation Buttons -->
+    <nav class="navButtons">
+      <button data-section="proposalSection" class="navBtn active">Proposal</button>
+      <button data-section="quizSection" class="navBtn">Quiz</button>
+      <button data-section="complimentSection" class="navBtn">Compliment</button>
+    </nav>
+  </div>
+
+  <!-- Heartbeat Animated Heart -->
+  <div class="heartbeat-heart">❤️</div>
+
+  <script src="purpose.js"></script>
+</body>
+</html>
